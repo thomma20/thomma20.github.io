@@ -2,25 +2,61 @@
     <head>
     </head>
         <title> My Class Schedule</title>
+        
+        <style>
+      table {
+        border-style: solid;
+        border-width: 2px;
+        border-color: purple;
+      }
+      
+      td {
+        border-style: solid;
+        border-width: 2px;
+        border-color: red;
+        text-align: center;
+      }
+      
+      .break {
+        background-color: pink;
+      }
+    
+    </style>
     <body>
     
     <h3> My Class Schedule, Spring 2015 </h3>
     
-        <ol>
-          <p><li> Family Communication </li>
-            <ul> <li> Sarah Wilder </li> <li> Main 116B </li></ul></p>
-          <p><li> Web Programming </li>
-            <ul> <li> David Ranum </li> <li> Olin 202 </li>  </ul></p>
-          <p><li> Information Systems </li>
-            <ul> <li> Mathew Bills </li> <li> Olin 213 </li> </ul></p>
-          <p><li> Human Resources </li>
-            <ul> <li> Greg Patton </li> <li> Olin 207 </li></ul></p>
-          <p><li> Yoga </li>
-            <ul> <li> Steve Bruchaker </li> <li> Dance Studio </li></ul></p>
-        </ol>
+ <table>
     
-    <img src="http://civa.org/sitecontent/wp-content/uploads/education-luther-college-header.jpg" width= 300px>
-    
+      <caption>My Daily Schedule</caption>
+      
+      <tr>
+        <th>Time</th><th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th>
+      </tr>
+      
+      <tr>
+        <td>8:00</td><td rowspan=4>CS160</td><td rowspan=6>CS165</td><td rowspan=4>CS160</td><td rowspan=6>CS165</td><td rowspan=4>CS160</td>
+      </tr>
+      <tr>
+        <td>8:15</td>
+      </tr>
+      <tr>
+        <td>8:30</td>
+      </tr>
+      <tr>
+        <td>8:45</td>
+      </tr>
+      <tr>
+        <td>9:00</td><td class="break">Break</td><td class="break">Break</td><td class="break">Break</td>
+      </tr>
+      <tr>
+        <td>9:15</td>
+      </tr>
+      <tr>
+        <td>9:30</td>
+      </tr>
+    </table>
+
     </body>
 
 </html>
