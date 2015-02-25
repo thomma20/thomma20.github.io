@@ -45,5 +45,5 @@
        
     .sunrise {
       background-image: URL("http://www.fimfiction-static.net/images/story_images/137325.jpg?1387649806");
-      background-size: width=25px;
+      background-repeat: none;
     }
