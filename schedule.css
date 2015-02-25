@@ -50,9 +50,10 @@
     
     .books {
       background-image: URL("http://whytoread.com/wp-content/uploads/2014/12/best-books.jpg");
-      
+      background-position: center;
     }
 
      .stack {
       background-image: URL("http://www.theprospect.net/wp-content/uploads/2014/10/books.jpg");
+      background-position: center;
      }
