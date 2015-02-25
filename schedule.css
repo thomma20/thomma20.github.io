@@ -47,3 +47,12 @@
       background-image: URL("http://www.timelinecoverbanner.com/wp-content/facebook-covers/sunrise.jpg");
       background-position: center;
     }
+    
+    .books {
+      background-image: URL("http://whytoread.com/wp-content/uploads/2014/12/best-books.jpg");
+      
+    }
+
+     .stack {
+      background-image: URL("http://www.theprospect.net/wp-content/uploads/2014/10/books.jpg");
+     }
