@@ -45,5 +45,6 @@
        
     .sunrise {
       background-image: URL("http://www.timelinecoverbanner.com/wp-content/facebook-covers/sunrise.jpg");
-      background-position: width=25px;
+      background-position: center;
+      background: 25px;
     }
