@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Temperature Converter</title>
+</head>
+<body>
+    <label for="thebox">Celsius</label>
+    <input type="text" id="thebox">
+    <button onclick="hello();">Convert</button>
+    <h3 id="temp"></h3>
+        
+    <script>
+        hello=function() {
+            thebox = document.querySelector("#thebox");
+            temperature = thebox.value;
+            theh1 = document.querySelector("#temp");
+            theh1.innerHTML = temperature*1.8+32 + "°F"
+        }
+    </script>
+
+
+</body>
+</html>
