@@ -1,6 +1,7 @@
   
-      body {
-        background-color:00CCFF;
+       body {
+        background-image: URL("http://www.innomanews.com/wp-content/uploads/2014/04/Pattern-Pieces-Chevron-misty-gray-Sprik-Space.jpg");
+        background-size: width=400px;
       }
       
       table {
