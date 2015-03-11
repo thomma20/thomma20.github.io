@@ -11,8 +11,8 @@
         <Label for="slider">Degrees Celsius</Label>
         <input type="range" min=-100 max=200 id="slider" onmousemove="changetemp();"value=0>
         
-        <h2 id="degreesc">Degrees C: 0</h2>
-        <h2 id="degreesf">Degrees F: 32</h2>
+        <h3 id="degreesc">Degrees C: 0</h3>
+        <h3 id="degreesf">Degrees F: 32</h3>
         
     <script>
             changetemp = function() {
@@ -20,12 +20,12 @@
                 c=theslider.value;
                 f=c*1.8 + 32;
                 
-                ch2 = document.querySelector("#degreesc");
-                fh2 = document.querySelector("#degreesf");
+                ch3 = document.querySelector("#degreesc");
+                fh3 = document.querySelector("#degreesf");
                 Fh1 = document.querySelector("#Firstheading");
                 
-                ch2.innerHTML="Degrees C: " + c;
-                fh2.innerHTML="Degrees F: " + f;
+                ch3.innerHTML="Degrees C: " + c;
+                fh3.innerHTML="Degrees F: " + f;
                 
             }
       
