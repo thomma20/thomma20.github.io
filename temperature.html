@@ -1,24 +1,35 @@
 <html>
 <head>
   <title>Temperature Converter</title>
-  
-  
+
   
 </head>
 <body>
-    <label for="thebox">Celsius</label>
-    <input type="text" id="thebox">
-    <button onclick="hello();">Convert</button>
-    <h3 id="temp"></h3>
+
+
+ <h1 id="Firstheading">Temperature Conversion</h1>
+        <Label for="slider">Degrees Celsius</Label>
+        <input type="range" min=-100 max=200 id="slider" onmousemove="changetemp();"value=0>
+        
+        <h2 id="degreesc">Degrees C: 0</h2>
+        <h2 id="degreesf">Degrees F: 32</h2>
         
     <script>
-        hello=function() {
-            thebox = document.querySelector("#thebox");
-            temperature = thebox.value;
-            theh1 = document.querySelector("#temp");
-            theh1.innerHTML = temperature*1.8+32 + "°F"
-        }
-    </script>
+            changetemp = function() {
+                theslider=document.querySelector("#slider");
+                c=theslider.value;
+                f=c*1.8 + 32;
+                
+                ch2 = document.querySelector("#degreesc");
+                fh2 = document.querySelector("#degreesf");
+                Fh1 = document.querySelector("#Firstheading");
+                
+                ch2.innerHTML="Degrees C: " + c;
+                fh2.innerHTML="Degrees F: " + f;
+                
+            }
+      
+     </script>
 
 
 </body>
