@@ -34,23 +34,23 @@
         
         bmi=(weight*703)/(height*height);
         
-        theh3.innerHTML = "Your BMI is " + bmi;
+        theh3.innerHTML = "BMI:  " + bmi;
         
         Fh1 = document.querySelector("#Firstheading");
         
         if (bmi>24) {
               message=document.querySelector("#message");
-              message.innerHTML="High";
+              message.innerHTML="This is high.";
               document.body.style.backgroundColor="red";
             }
             if (bmi<19) {
               message=document.querySelector("#message");
-              message.innerHTML="Low";
+              message.innerHTML="This is low.";
               document.body.style.backgroundColor="blue";
             }
             if (bmi>=19 && bmi<=24) {
               message=document.querySelector("#message");
-              message.innerHTML="Ok";
+              message.innerHTML="This is ok.";
               document.body.style.backgroundColor="yellow";
             }
         
