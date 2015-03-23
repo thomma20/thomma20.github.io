@@ -6,22 +6,63 @@
   
     </head>
     <body>
-          <label for="firstbox">Height </label>
-          <input type="text" id="firstbox">
-          <label for="secondbox">Weight</label>
-          <input type="text" id="secondbox">
-        <button onclick="hello();">Calculate BMI</button>
-        <h3 id="output"></h3>
+        <h1 id="heading"> BMI Calculator</h1>
+    
+         <label for ="slidera">Height (in inches)</label>
+         <input type="range" min=0 max=100 id="slidera" onmousemove="hello();"value=0>
+         <label for="sliderb">Weight (in lbs)</label>
+         <input type="range" min=0 max=400 id="sliderb" onmousemove="hello();"value=0>
+         <h3 id="heightoutput">Height: 0</h3>
+         <h3 id="weightoutput">Weight: 0</h3>
+         <h3 id="output"></h3>
+         <h3 id="message"></h3>
+          
         
         <script>
-            hello=function() {
-                firstbox = document.querySelector("#firstbox");
-                height = firstbox.value;
-                secondbox = document.querySelector("#secondbox");
-                weight = secondbox.value;
-                theh1 = document.querySelector("#output");
-                theh1.innerHTML = "Your BMI is " + (weight*703)/(height*height);
+           hello=function(){
+        slidera=document.querySelector("#slidera");
+        height=slidera.value;
+        sliderb=document.querySelector("#sliderb");
+        weight=sliderb.value;
+        
+        heighth2=document.querySelector("#heightoutput");
+        weighth2=document.querySelector("#weightoutput");
+        theh3=document.querySelector("#output")
+        
+        heighth2.innerHTML="Height: " + height;
+        weighth2.innerHTML="Weight: " + weight;
+        
+        bmi=(weight*703)/(height*height);
+        
+        theh3.innerHTML = "Your BMI is " + bmi;
+        
+        Fh1 = document.querySelector("#Firstheading");
+        
+        if (bmi>24) {
+              message=document.querySelector("#message");
+              message.innerHTML="High";
+              document.body.style.backgroundColor="red";
             }
+            if (bmi<19) {
+              message=document.querySelector("#message");
+              message.innerHTML="Low";
+              document.body.style.backgroundColor="blue";
+            }
+            if (bmi>=19 && bmi<=24) {
+              message=document.querySelector("#message");
+              message.innerHTML="Ok";
+              document.body.style.backgroundColor="#yellow";
+            }
+        
+      }
+      
+      document.body.style.backgroundColor = "#B2FFE5";
+      
+      Fh1 = document.querySelector("#heading");
+      Fh1.style.textAlign = "center";
+      Fh1.style.fontSize = "20px";
+        
+        
         </script>
         
 
