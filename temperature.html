@@ -6,12 +6,13 @@
 </head>
 <body>
 
-
-        <Label for="slider">Degrees</Label>
-        <input type="range" min=-100 max=200 id="slider" onmousemove="changetemp();"value=0>
+  <h1 id="heading"> Temperature Conversion</h1></h1>
+        <Label for="slider">Degrees Celsius</Label>
+        <input type="range" min=-50 max=50 id="slider" onmousemove="changetemp();"value=0>
         
         <h3 id="degreesc">Degrees C: 0</h3>
         <h3 id="degreesf">Degrees F: 32</h3>
+        <3 id="message"></3>
         
     <script>
             changetemp = function() {
@@ -21,15 +22,35 @@
                 
                 ch3 = document.querySelector("#degreesc");
                 fh3 = document.querySelector("#degreesf");
-                Fh1 = document.querySelector("#Firstheading");
+                fh1 = document.querySelector("#heading");
                 
                 ch3.innerHTML="Degrees C: " + c;
                 fh3.innerHTML="Degrees F: " + f;
                 
+                
+                if (f>90) {
+                  message=document.querySelector("#message");
+                  message.innerHTML="Too Hot";
+                  document.body.style.backgroundColor="red";
+                }
+                
+                if (f<5) {
+                  message=document.querySelector("#message");
+                  message.innerHTML="Too Cold";
+                  document.body.style.backgroundColor="blue"
+                }
+                
+                if (f>=5 && f<=90) {
+                  message=document.querySelector("message");
+                  message.innerHTML="Ok";
+                  document.body.style.backgroundColor="yellow"
+                }
+                
             }
       
-      document.body.style.backgroundImage = URL("http://www.innomanews.com/wp-content/uploads/2014/04/Pattern-Pieces-Chevron-misty-gray-Sprik-Space.jpg");
-      
+      fh1 = document.querySelector("#heading");
+      fh1.style.textAlign= "center";
+      fh1.style.fontSize= "20px";
       
      </script>
 
