@@ -2,90 +2,10 @@
 <head>
   <title>Address Book</title>
  
- <style>
-      #firstname,#lastname,#phone,#email {
-        display:block;
-      }
-      
-      table{
-        border-style:solid;
-        border-width: 2px;
-        border-color: black;
-      }
-      
-      td {
-        border-style:solid;
-        border-width: 2px;
-        border-color: purple;
-      }
-    </style>
     
  <body>
- <h1>My Address Book</h1>
-    <label for="firstname">First Name</label>
-    <input type="text" id="firstname">
-    <label for="lastname">Last Name</label>
-    <input type="text" id="lastname">
-    <label for="phone">Phone Number</label>
-    <input type="text" id="phone">
-    <label for="email">Email</label>
-    <input type="text" id="email">
-    
-    <button onclick="addentry();">Add Item</button>
-    
-    <table id="addresstable">
-      <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Phone</th>
-        <th>EMail</th>
-      </tr>
-    </table>
-    
-    <script>
-    addentry=function(){
-      firstname=document.querySelector("#firstname").value;
-      lastname=document.querySelector("#lastname").value;
-      phone=document.querySelector("#phone").value;
-      email=document.querySelector("#email").value;
-      
-      newrow = document.createElement("tr");
-      td1=document.createElement("td");
-      td1.innerHTML=firstname;
-      td1.onclick=editfirstname;
-      td2=document.createElement("td");
-      td2.innerHTML=lastname;
-      td3=document.createElement("td");
-      td3.innerHTML=phone;
-      td4=document.createElement("td");
-      td4.innerHTML=email;
-      newrow.appendChild(td1);
-      newrow.appendChild(td2);
-      newrow.appendChild(td3);
-      newrow.appendChild(td4);
-      table=document.querySelector("#addresstable");
-      table.appendChild(newrow);
-      fh1 = document.querySelector("#heading");
-      
-      document.querySelector("#firstname").value="";
-      document.querySelector("#lastname").value="";
-      document.querySelector("#phone").value="";
-      document.querySelector("#email").value="";
-      
-    }
-    
-    editfirstname=function(){
-      firstnamen=document.querySelector("#firstname").value;
-      this.innerHTML=firstname;
-      
-    }
-      
-      
-    fh1 = document.querySelector("#heading");
-    fh1.style.textAlign= "center";
-    fh1.style.fontSize= "20px"; 
-      
-    </script>
+
+
 
 
 </body>
