@@ -2,8 +2,8 @@
 <html>
     <head>
         <title>BMI Calculator</title>
-    <style>
-        h1 {
+     <style>
+h1 {
     border-style: solid;
     border-width: 6px;
     text-align: center;
@@ -11,23 +11,36 @@
     padding-bottom: 6px;
     background-color: #00cc99;
       }
-        
-    </style>    
+      
+   body {
+        background-image: URL("http://www.innomanews.com/wp-content/uploads/2014/04/Pattern-Pieces-Chevron-misty-gray-Sprik-Space.jpg");
+        background-size: width=400px;
+      }
+      
+   main {
+     background-color: #FFFFFF;
+     border-color: black;
+     border-width: 3px;
+     text-align: center;
+     border-style: solid;
+   }
+      
+</style>
         
   
     </head>
     <body>
         <h1 id="heading"> BMI Calculator</h1>
-    
+    <main>
          <label for ="slidera">Height (in inches)</label>
          <input type="range" min=0 max=100 id="slidera" onmousemove="hello();"value=0>
          <label for="sliderb">Weight (in lbs)</label>
          <input type="range" min=0 max=400 id="sliderb" onmousemove="hello();"value=0>
-         <h3 id="heightoutput">Height: 0</h3>
-         <h3 id="weightoutput">Weight: 0</h3>
-         <h3 id="output"></h3>
-         <h3 id="message"></h3>
-          
+         <h2 id="heightoutput">Height: 0</h2>
+         <h2 id="weightoutput">Weight: 0</h2>
+         <h2 id="output"></h2>
+         <h2 id="message"></h2>
+    </main>      
         
         <script>
            hello=function(){
@@ -38,14 +51,14 @@
         
         heighth2=document.querySelector("#heightoutput");
         weighth2=document.querySelector("#weightoutput");
-        theh3=document.querySelector("#output")
+        theh2=document.querySelector("#output")
         
         heighth2.innerHTML="Height: " + height;
         weighth2.innerHTML="Weight: " + weight;
         
         bmi=(weight*703)/(height*height);
         
-        theh3.innerHTML = "BMI:  " + bmi;
+        theh2.innerHTML = "BMI:  " + bmi;
         
         Fh1 = document.querySelector("#Firstheading");
         
@@ -68,10 +81,6 @@
       }
       
       
-      Fh1 = document.querySelector("#heading");
-      Fh1.style.textAlign = "center";
-      Fh1.style.fontSize = "20px";
-        
         
         </script>
         
