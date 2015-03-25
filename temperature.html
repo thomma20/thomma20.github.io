@@ -23,12 +23,12 @@ h1 {
 <body>
 
   <h1 id="heading"> Temperature Conversion</h1>
-        <Label for="slider">Temperature</Label>
+        <h2><Label for="slider">Temperature</Label></h2>
         <input type="range" min=-50 max=50 id="slider" onmousemove="changetemp();"value=0>
         
-        <h3 id="degreesc">Degrees C: 0</h3>
-        <h3 id="degreesf">Degrees F: 32</h3>
-        <h3 id="message"></h3>
+        <h2 id="degreesc">Degrees C: 0</h2>
+        <h2 id="degreesf">Degrees F: 32</h2>
+        <h2 id="message"></h2>
         
     <script>
             changetemp = function() {
@@ -36,12 +36,12 @@ h1 {
                 c=theslider.value;
                 f=c*1.8 + 32;
                 
-                ch3 = document.querySelector("#degreesc");
-                fh3 = document.querySelector("#degreesf");
+                ch2 = document.querySelector("#degreesc");
+                fh2 = document.querySelector("#degreesf");
                 fh1 = document.querySelector("#heading");
                 
-                ch3.innerHTML="Degrees C: " + c;
-                fh3.innerHTML="Degrees F: " + f;
+                ch2.innerHTML="Degrees C: " + c;
+                fh2.innerHTML="Degrees F: " + f;
                 
                 
                 if (f>90) {
