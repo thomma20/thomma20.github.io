@@ -8,12 +8,12 @@
     border-style: solid;
     border-color: #00cc99;
     border-width: 5px;
-    background-color: #999999;
+    background-color: #FFFFFF;
   }
   td {
     text-align: left;
     border-style: solid;
-    background-color: #999999;
+    background-color: #FFFFFF;
   }
   
   
@@ -26,7 +26,7 @@
 
 </head>
 <body>
-  <h2> My Address Book </h2>
+  <h1> My Address Book </h1>
 
     <label> First Name</label>
     <input type="text" id="firstname">
@@ -37,7 +37,7 @@
     <p><label>Phone Number</label>
     <input type="text" id="phonenumber"></p>
     
-    <p><button onclick="add();"> Add to Address Book</button></p>
+    <p><button onclick="hello();"> Add to Address Book</button></p>
     
  <table id="table">
    <tr>
@@ -50,7 +50,7 @@
  
  <script> 
    
-   add = function () {
+   hello= function () {
      firstname=document.querySelector("#firstname").value;
             lastname=document.querySelector("#lastname").value;
             email=document.querySelector("#email").value;
