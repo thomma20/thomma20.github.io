@@ -17,19 +17,26 @@ h1 {
         background-size: width=400px;
       }
       
+   main {
+     background-color: #FFFFFF;
+     width: 100%;
+   }
+      
 </style>
   
 </head>
 <body>
 
   <h1 id="heading"> Temperature Conversion</h1>
+  
+  <main>
         <Label for="slider">Temperature</Label>
         <input type="range" min=-50 max=50 id="slider" onmousemove="changetemp();"value=0>
         
         <h2 id="degreesc">Degrees C: 0</h2>
         <h2 id="degreesf">Degrees F: 32</h2>
         <h2 id="message"></h2>
-        
+  </main>
     <script>
             changetemp = function() {
                 theslider=document.querySelector("#slider");
