@@ -61,35 +61,34 @@ h1 {
    
    hello= function() {
      firstname=document.querySelector("#firstname").value;
-            lastname=document.querySelector("#lastname").value;
-            email=document.querySelector("#email").value;
-            phonenumber=document.querySelector("#phonenumber").value;
+     lastname=document.querySelector("#lastname").value;
+     email=document.querySelector("#email").value;
+     phonenumber=document.querySelector("#phonenumber").value;
 
-             t = document.querySelector("#table")
-             trow = document.createElement("tr")
-             td1 = document.createElement("td")
-             contents1 = document.createTextNode(firstname)
-             td1.appendChild(contents1)
-             trow.appendChild(td1)
-            td2 = document.createElement("td")
-             contents2 = document.createTextNode(lastname)
-             td2.appendChild(contents2)
-             trow.appendChild(td2)
-             td3 = document.createElement("td")
-             contents3 = document.createTextNode(email)
-             td3.appendChild(contents3)
-             trow.appendChild(td3)
-             td4 = document.createElement("td")
-             contents4 = document.createTextNode(phonenumber)
-             td4.appendChild(contents4)
-             trow.appendChild(td4)
-             t.appendChild(trow)
+     t = document.querySelector("#table")
+     trow = document.createElement("tr")
+     td1 = document.createElement("td")
+     contents1 = document.createTextNode(firstname)
+     td1.appendChild(contents1)
+     trow.appendChild(td1)
+     td2 = document.createElement("td")
+     contents2 = document.createTextNode(lastname)
+     td2.appendChild(contents2)
+     trow.appendChild(td2)
+     td3 = document.createElement("td")
+     contents3 = document.createTextNode(email)
+     td3.appendChild(contents3)
+     trow.appendChild(td3)
+     td4 = document.createElement("td")
+     contents4 = document.createTextNode(phonenumber)
+     td4.appendChild(contents4)
+     trow.appendChild(td4)
+     t.appendChild(trow)
              
-             firstname.value= " ";
-             lastname.value=" ";
-             email.value=" ";
-             phonenumber.value=" ";
-          }
+     firstname.value= " ";
+     lastname.value=" ";
+     email.value=" ";
+    phonenumber.value=" ";
    }
    
  </script>
