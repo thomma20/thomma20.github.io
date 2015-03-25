@@ -12,11 +12,6 @@ h1 {
     background-color: #00cc99;
       }
       
-   body {
-        background-image: URL("http://www.innomanews.com/wp-content/uploads/2014/04/Pattern-Pieces-Chevron-misty-gray-Sprik-Space.jpg");
-        background-size: width=400px;
-      }
-      
    main {
      background-color: #FFFFFF;
      border-color: black;
@@ -65,17 +60,17 @@ h1 {
         if (bmi>24) {
               message=document.querySelector("#message");
               message.innerHTML="This is high.";
-              document.body.style.main.backgroundColor="red";
+              document.body.style.backgroundColor="red";
             }
             if (bmi<19) {
               message=document.querySelector("#message");
               message.innerHTML="This is low.";
-              document.body.style.main.backgroundColor="blue";
+              document.body.style.backgroundColor="blue";
             }
             if (bmi>=19 && bmi<=24) {
               message=document.querySelector("#message");
               message.innerHTML="This is ok.";
-              document.body.style.main.backgroundColor="yellow";
+              document.body.style.backgroundColor="yellow";
             }
         
       }
