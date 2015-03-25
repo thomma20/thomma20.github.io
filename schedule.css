@@ -29,6 +29,9 @@
     background-color: #00cc99;
       }
       
+    main {
+      padding-left: 20px;
+    }
       
       .pink {
         background-color: pink;
