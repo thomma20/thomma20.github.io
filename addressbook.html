@@ -4,7 +4,7 @@
 <title>Address Book </title>
 <style>
   table {
-    width: 60%;
+    width: 100%;
     border-style: solid;
     border-color: #00cc99;
     border-width: 5px;
@@ -31,13 +31,20 @@ h1 {
     background-color: #00cc99;
       }
 
+main {
+  background-color: #FFFFFF;
+  border-style: solid;
+  border-width: 2px;
+  text-align: center;
+}
+
 
 </style>
 
 </head>
 <body>
   <h1> My Address Book </h1>
-
+<main>
     <label> First Name</label>
     <input type="text" id="firstname">
     <p><label> Last Name </label>
@@ -48,6 +55,7 @@ h1 {
     <input type="text" id="phonenumber"></p>
     
     <p><button onclick="hello ();"> Add to Address Book</button></p>
+</main>    
     
  <table id="table">
    <tr>
